@@ -3,23 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.unipar.entities;
+package br.com.unipar.entities.flavor;
 
 import br.com.unipar.controller.Order;
+import br.com.unipar.controller.OrderDecorator;
 
 /**
  *
  * @author phtar
  */
-public class BasicOrder implements Order{
+public class Coffe extends OrderDecorator {
 
-    
+    private double VALUE = 1.50;
+
+    public Coffe(Order Order) {
+        super(Order);
+    }
+
     @Override
     public double calculate() {
-        return 0;
+        return super.calculate() + VALUE;
     }
-    
-    
-    
-    
+
 }

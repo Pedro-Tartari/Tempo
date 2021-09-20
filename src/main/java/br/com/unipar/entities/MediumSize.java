@@ -22,7 +22,7 @@ public class MediumSize extends OrderDecorator {
 
     @Override
     public double calculate() {
-        return super.calculate() + PERCENTAGE; 
+        return super.calculate() * PERCENTAGE; 
     }
     
     

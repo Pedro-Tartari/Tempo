@@ -12,18 +12,18 @@ import br.com.unipar.controller.OrderDecorator;
  *
  * @author phtar
  */
-public class NormalSize extends OrderDecorator{
-    
-    public NormalSize(Order order) {
-        super(order);
-    }
-
-    @Override
-    public double calculate() {
-        return super.calculate(); 
-    
-    }
-    
-    
-    
-}
+//public class NormalSize extends OrderDecorator{
+//    
+//    public NormalSize(Order order) {
+//        super(order);
+//    }
+//
+//    @Override
+//    public double calculate() {
+//        return super.calculate(); 
+//    
+//    }
+//    
+//    
+//    
+//}

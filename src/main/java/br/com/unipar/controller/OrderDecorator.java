@@ -5,8 +5,6 @@
  */
 package br.com.unipar.controller;
 
-import br.com.unipar.entities.BasicOrder;
-
 /**
  *
  * @author phtar
