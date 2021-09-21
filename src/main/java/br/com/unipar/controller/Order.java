@@ -5,10 +5,6 @@
  */
 package br.com.unipar.controller;
 
-/**
- *
- * @author phtar
- */
 public interface Order {
     
      double calculate();

@@ -5,17 +5,10 @@
  */
 package br.com.unipar.controller;
 
-import br.com.unipar.entities.BasicOrder;
-
-/**
- *
- * @author phtar
- */
-public class OrderDecorator implements Order{
+public class OrderDecorator implements Order {
 
     private Order order;
-    
-    //Ele vai receber o BasicOrder e salvar na propriedade a cima
+
     public OrderDecorator(Order order) {
         this.order = order;
     }
@@ -23,8 +16,5 @@ public class OrderDecorator implements Order{
     @Override
     public double calculate() {
         return order.calculate();
-     }
-    
-   
-    
+    }
 }

@@ -3,23 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.unipar.entities;
+package br.com.unipar.entities.additional;
 
 import br.com.unipar.controller.Order;
 import br.com.unipar.controller.OrderDecorator;
 
-public class MediumSize extends OrderDecorator {
+public class CinnamonPowder extends OrderDecorator{
     
-    private double PERCENTAGE = 1.2;
-    
-    public MediumSize(Order order) {
-        super(order);
+    private double VALUE = 0.75;
+
+    public CinnamonPowder(Order Order) {
+        super(Order);
     }
 
     @Override
     public double calculate() {
-        return super.calculate() * PERCENTAGE; 
+        return super.calculate() + VALUE;
     }
-    
-    
 }

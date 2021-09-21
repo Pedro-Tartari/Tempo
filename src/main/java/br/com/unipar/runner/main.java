@@ -5,21 +5,31 @@
  */
 package br.com.unipar.runner;
 
+import br.com.unipar.entities.flavor.*;
 import br.com.unipar.controller.Order;
 import br.com.unipar.entities.*;
+import br.com.unipar.entities.additional.*;
 
-
-/**
- *
- * @author phtar
- */
 public class main {
     public static void main(String[] args) {
         
+        /*Flavor
+            Coffe - CoffeMilk - ChocoMilk - Mocha - EspressPanna
+        */
         
-        Order teste = new MediumSize(new Coffe(new BasicOrder()));
+        /*Size
+            MediumSize - BigSize
+        */
         
-        System.out.println(teste.calculate());
+        /*
+         A ordem de print é da esquerda para Direita, 
+        para dar o valor mais correto o ideal é ser o flavor mais a direita
+        seguido pelo tamanho e depois adicionais
+        */
+        
+        Order teste =  new CondensedMilk (new Cookie(new BigSize(new Coffe ())));
+        
+        System.out.println("O valor total é de: " + teste.calculate());
         
     }
 }
