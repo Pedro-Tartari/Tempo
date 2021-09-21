@@ -16,6 +16,7 @@ public class main {
         /*Flavor
             Coffe - CoffeMilk - ChocoMilk - Mocha - EspressPanna
         */
+<<<<<<< HEAD
         
         /*Size
             MediumSize - BigSize
@@ -28,6 +29,14 @@ public class main {
         */
         
         Order teste =  new CondensedMilk (new Cookie(new BigSize(new Coffe ())));
+=======
+        
+        /*Size
+            MediumSize - BigSize
+        */
+        
+        Order teste =new CondensedMilk(new Cookie(new BigSize(new Coffe(new BasicOrder()))));
+>>>>>>> b13ea35831e6c8b73ae96ca446f47eb76b7600c9
         
         System.out.println("O valor total é de: " + teste.calculate());
         

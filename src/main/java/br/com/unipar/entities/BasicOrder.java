@@ -12,7 +12,10 @@ public class BasicOrder implements Order{
     
     @Override
     public double calculate() {
+<<<<<<< HEAD
         System.out.println("Basic");
+=======
+>>>>>>> b13ea35831e6c8b73ae96ca446f47eb76b7600c9
         return 0;
     }
     

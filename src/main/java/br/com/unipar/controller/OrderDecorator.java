@@ -5,7 +5,15 @@
  */
 package br.com.unipar.controller;
 
+<<<<<<< HEAD
 public class OrderDecorator implements Order {
+=======
+/**
+ *
+ * @author phtar
+ */
+public class OrderDecorator implements Order{
+>>>>>>> b13ea35831e6c8b73ae96ca446f47eb76b7600c9
 
     private Order order;
 
