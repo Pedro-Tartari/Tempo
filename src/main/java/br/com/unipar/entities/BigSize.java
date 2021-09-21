@@ -8,13 +8,9 @@ package br.com.unipar.entities;
 import br.com.unipar.controller.Order;
 import br.com.unipar.controller.OrderDecorator;
 
-/**
- *
- * @author phtar
- */
 public class BigSize extends OrderDecorator{
     
-    private double PERCENTAGE = 0.3;
+    private double PERCENTAGE = 1.35;
     
     public BigSize(Order order) {
         super(order);
@@ -22,8 +18,5 @@ public class BigSize extends OrderDecorator{
 
     @Override
     public double calculate() {
-        return super.calculate() + PERCENTAGE;  }
-    
-    
-    
+        return super.calculate() * PERCENTAGE;  }
 }

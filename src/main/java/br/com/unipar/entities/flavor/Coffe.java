@@ -3,20 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.unipar.entities;
+package br.com.unipar.entities.flavor;
 
 import br.com.unipar.controller.Order;
 
-public class BasicOrder implements Order{
+public class Coffe implements Order {
 
-    
+    private double VALUE = 1.50;
+
+
     @Override
     public double calculate() {
-        System.out.println("Basic");
-        return 0;
+        return VALUE;
     }
-    
-    
-    
-    
+
 }
